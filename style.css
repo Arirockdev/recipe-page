@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Young Serif'; 
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --font-family: 'Young Serif';
+  --font-family-dos: 'Outfit';
+
+
+    /* // Colors */
+ 
+   /* // Primary */
+
+
+  --nutmeg: #854632;
+  --dark-raspberry: #7b284f;
+
+  /* // Neutral */
+
+  --white: #ffffff;
+  --rose-white: #fff5fa;
+  --eggshell: #f3e6d8;
+  --light-grey: #e4ded8;
+  --wenge-brown: #5f574e;
+  --dark-charcoal: #302d2c;
+
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+ 
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+hr {
+  width: 85%;
+  margin: auto;
+  border: 1px solid var(--rose-white);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+body{
+  position: relative;
+  height: 100dvh;
+}
+
+header{
+  height: 170px;
+}
+
+.hero{
+  max-width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/image-omelette.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.first__content {
+  padding: 2.5rem;
+}
+
+.first__content h1 {
+  font-family: var(--font-family);
+  font-size: 3.5rem;
+  color: var(--dark-charcoal);
+  font-weight: 200;
+  line-height: 3.5rem;
+}
+
+.first__content p {
+  font-family: var(--font-family-dos);
+  font-size: 1.6rem;
+  letter-spacing: .3px;
+  color: var(--nutmeg);
+  margin-top: 2rem;
+}
+
+.preparation {
+  background: var(--rose-white);
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+}
+.preparation--title {
+  font-family: var(--font-family-dos);
+  color: var(--dark-raspberry);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.list__preparation{
+  font-family: var(--font-family-dos);
+  padding: 0 4.5rem;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list__preparation--item {
+  line-height: 2.5rem;
+  color: var(--wenge-brown);
+  padding: 0 1.5rem;
+  list-style-position: outside;
+}
+
+.list__preparation--item::marker{
+  color: var(--dark-charcoal);  
+}
+
+.list__preparation--item span {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+.ingredients {
+  width: 85%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.ingredients__title{
+  font-size: 2.5rem;
+  color: var(--nutmeg);
+  font-family: var(--font-family);
+  font-weight: 300;
+}
+
+.list__ingredients {
+  padding: 0 2rem;
+  margin-top: 1.5rem;
+}
+
+.list__ingredients--item {
+  padding: 0 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--wenge-brown);
+  font-family: var(--font-family-dos);
+  font-weight: 500;
+}
+
+.list__ingredients--item::marker {
+  list-style-position: outside;
+}
+
+
+.instructions {
+  width: 85%;
+  margin: auto;
+}
+
+.instructions__title {
+  font-size: 2.5rem;
+  color: var(--nutmeg);
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+.list__instructions {
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-family: var(--font-family-dos);
+  color: var(--nutmeg);
+}
+
+.list__instructions span {
+  color: var(--wenge-brown);
+  font-weight: 800;
+}
+
+.list__instructions--item {
+  padding: 1.5rem;
+}
+
+.list__instructions--item::marker {
+  color: var(--nutmeg);
+  font-weight: 800;
+}
+
+.nutrition {
+  width: 85%;
+  margin: auto;
+}
+
+.nutrition__title {
+  font-size: 2.5rem;
+  color: var(--nutmeg);
+  font-family: var(--font-family);
+  font-weight: 300;
+
+}
+
+.nutrition__paragraph {
+  margin-top: 1.5rem;
+  font-family: var(--font-family-dos);
+  font-size: 1.5rem;
+  color: var(--nutmeg);
+}
+
+.nutrition__table {
+  font-size: 1.5rem;
+  font-family: var(--font-family-dos);
+  padding: 1rem;
+}
+table{
+  width: 90%;
+}
+
+td {
+  border-bottom: 1px solid var(--light-grey);
+  border-spacing: 10px;
+  padding: 2.2rem;
+  color: var(--nutmeg);
+  font-weight: 500;
+}
+.color {
+  font-weight: 800;
+  color: var(--nutmeg);
+}
+.sin-borde {
+  border: none;
+}
+
+footer {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-family: var(--font-family-dos);
+  text-align: center;
+}
+
+.attribution a{
+  font-family: var(--font-family);
+  color: #7b284f;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 576px){
+  body {
+    background: var(--eggshell);
+    padding: 2rem;
+  }
+  
+  .container__gral {
+    max-width: 780px; 
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: auto;
+  }
+
+  header{
+    height: 300px;
+
+  }
+  .hero {
+  height: 100%;
+  border-radius: 10px;
+  }
+}
